@@ -182,7 +182,8 @@ class Solver(object):
                 axarr[idx + 2].imshow(prm.cpu(), cmap=plt.cm.jet)
                 axarr[idx + 2].set_title('Peak Response Map ("%s")' % (class_names[peak[1].item()]))
                 axarr[idx + 2].axis('off')
-        
+            plt.savefig("prm_result.jpg") # save peak response maps
+
         # Weakly supervised instance segmentation
         # predict instance masks via proposal retrieval
         instance_list = self.model(input_var, retrieval_cfg=dict(proposals=proposals, param=(0.95, 1e-5, 0.8)))
@@ -203,6 +204,7 @@ class Solver(object):
             axarr[2].imshow(vis[1])
             axarr[2].set_title('Peak Response Maps')
             axarr[2].axis('off')
+            plt.savefig("final_result.jpg") # save final results
             plt.show()
 
 
