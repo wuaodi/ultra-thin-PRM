@@ -6,6 +6,15 @@
 #### Version info: pytorch 0.4.1, python 3.6
 
 ## Training & Inference
+Datasets:
+```python
+%mkdir /content/ultra-thin-PRM/datasets
+%cd /content/ultra-thin-PRM/datasets/
+# download and extract data
+!wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+!tar xvf VOCtrainval_11-May-2012.tar
+```
+
 Training:
 ```pythobn
 python main.py --train True
@@ -14,15 +23,6 @@ python main.py --train True
 Inference:
 ```pythobn
 python main.py 
-```
-
-Datasets
-```python
-%mkdir /content/ultra-thin-PRM/datasets
-%cd /content/ultra-thin-PRM/datasets/
-# download and extract data
-!wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-!tar xvf VOCtrainval_11-May-2012.tar
 ```
 
 
