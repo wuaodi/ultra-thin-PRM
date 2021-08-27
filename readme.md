@@ -17,7 +17,7 @@ python main.py
 ```
 
 Datasets
-`` `python
+```python
 %mkdir /content/ultra-thin-PRM/datasets
 %cd /content/ultra-thin-PRM/datasets/
 # download and extract data
