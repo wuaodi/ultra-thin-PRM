@@ -16,6 +16,16 @@ Inference:
 python main.py 
 ```
 
+Datasets
+`` `python
+%mkdir /content/ultra-thin-PRM/datasets
+%cd /content/ultra-thin-PRM/datasets/
+# download and extract data
+!wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+!tar xvf VOCtrainval_11-May-2012.tar
+```
+
+
 ## Sample result
 
 <figure class="half">
